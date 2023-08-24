@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+#team img{
+    margin-top: -50px;
+}
+
+.facebook{
+    font-size: 26px;
+    color: #3b5998;
+}
+
+.twitter{
+    font-size: 26px;
+    color: #00aced;
+}
+
+.instagram{
+    font-size: 26px;
+    color: #cd486b;
+}
+
+
+#team p{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#team .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #0276fa;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+#team .card:hover{
+    background: #0276fa;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+
+#team .card:hover h3, .card:hover i{
+    color: #fff;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+  }
+.formulario{
+    margin: 0 auto;
+    padding: 60px 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    background-image: url(https://images6.alphacoders.com/371/thumb-1920-371656.jpg);
+    background-size: cover;
+    
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid;
+}
+select{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid;
+}
+
+input:focus{
+    outline: none;
+    color: black ;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top:-14px;
+    font-size: 16px;
+    color:rgb(94, 88, 88)
+}
+
+input:focus~.barra{
+    width: 100%;
+
+}
+
+.button{
+    background: rgb(13, 153, 13);
+    border:none;
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.columna~div{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-right: -4px;
+}
+
+hr {
+    height: 100px;
+    background-color: red;
+  }
+
+.tarjeta{
+    display: flex;
+    background: rgb(0, 0, 0);
+    width: 600px;
+    height: auto;
+    background: rgb(51, 48, 48);
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0,.2);
+}
+
+.header{
+    border-right: 1px solid rgb#ddd;
+}
+
+.descripcion{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0  30px 30px 0;
+}
+
+.header{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header a{
+    position: relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px ;
+    transition: .25;
+    width: 50%;
+    height: 50%;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgb(0, 0, 0,-1);
+}
+
+.header h2{
+    color: rgb(255, 255, 255);
+
+}
+.header h4{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.descripcion{
+    position: relative;
+    
+}
+
+.descripcion p{
+    margin: 30px 30px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.descripcion .social{
+    margin: 20px 30px;
+}
+
+
+.descripcion, .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+body{
+    background-image: url("../media/backofficev2.png");
+}
+
+.container{
+   background-image:url(https://fondosmil.com/fondo/39742.jpg);
+   background-size: cover;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-container-maps{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container-maps iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+}
+
+.color-white{
+    color: white;
+}

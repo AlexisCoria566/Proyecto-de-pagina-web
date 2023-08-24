@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Eliminar Comentario{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+<body>
+   <div class="container">
+    <br><br>
+    <h1 class="color-white">{{ object.headline }}</h1>
+        <p class="color-white">{{ object.content }}</p>
+        <p class="color-white">Usuario: {{ object.nombre }}</p>
+        <p class="color-white">Publico: {{ object.comentario }}</p>
+        <p class="color-white">Fecha de publicación: {{ object.created }}</p>
+        <p class="color-white">{{Opinion.nombre}}</p>
+    <br><br>
+
+    </div> 
+</body>
+
+
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'core\base.html' %}
+{% load static %}
+{% block title %} Contacto --{% endblock %}
+{% block content %} 
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+
+<body>
+    <div class="container">
+            <center> <img class="img-fluid" src="{% static 'core/media/contactenos.png' %}"></center>
+            <br>
+        <div class="contenedor">
+            <form class="formulario" action="/contactar/" method="POST" id="formulario">  {% csrf_token %}
+                <center><img class="img-fluid" src="{% static 'core/media/banner_completeform.png' %}" width="600px"></center>  
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="grupo">
+                            <input type="text" name="nombre" id="name" required  style="color: white;"><span class="barra"></span>
+                            <label for=""  style="color: white;">Apellido y Nombre</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="grupo">
+                            <input type="number" name="documento" id="documento" required  style="color: white;"><span class="barra"></span>
+                            <label for=""  style="color: white;">N° Documento</label>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                      <div class="grupo">
+                        <input type="number" name="telefono" id="telefono" required  style="color: white;"><span class="barra"></span>
+                        <label for=""  style="color: white;">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="grupo">
+                        <input type="email" name="email" id="email" required  style="color: white;"><span class="barra"></span>
+                        <label for=""  style="color: white;">Correo electrónico</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6">       
+                        <div class="grupo">
+                            <input type="text" name="direccion" id="direccion" required  style="color: white;"><span class="barra"></span>
+                            <label for=""  style="color: white;">Direccion</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="grupo">
+                            <input type="text" name="ciudad" id="ciudad" required  style="color: white;"><span class="barra"></span>
+                            <label for=""  style="color: white;">Ciudad</label>
+                        </div>
+                    </div>
+                </div>         
+                <div class="grupo">
+                    <input type="text" name="mensaje" width="50px" id="mensaje" required  style="color: white;"><span class="barra"></span>
+                    <label for=""  style="color: white;">Dejanos un mensaje</label>
+                </div>     
+                <button class="button" type="submit">Enviar</button>
+            </form>
+        </div> 
+            <br><br>
+    </div>
+</body>
+{% endblock %}
